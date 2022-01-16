@@ -47,25 +47,24 @@ const filterResults=()=>{
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
-  return (
-    <div className='container mt-5'>
-      <h1 className=' mb-3 text-center'>This is your blog feed
-      
-      
-           
-             
-             
-            </h1>
-            <div className="header">
+  return (<div>
+    
+      <h1 className=' mb-3  mt-3 text-center'>This is your blog feed </h1>
+      <hr/>
+      <div className='container '>
+            <div className="header ">
+            
+            <Selector  setppp={setppp}/>
             <span className="search" >
-            <button onClick={filterResults} >
+            <button className=".btn" style={{background:"#FB7CAC"}}onClick={filterResults} >
            <SearchIcon />
            </button>  
 
-            <input type ="text" onChange={handleChange}/>
+            <input style={{borderRadius:"2px"}} placeholder='Search here' type ="text" onChange={handleChange}/>
             </span>
-            <Selector  setppp={setppp}/>
             </div>
+            
+           
             
             
       <Posts posts={currentPosts} loading={loading} />
@@ -74,6 +73,10 @@ const filterResults=()=>{
         totalPosts={posts2.length}
         paginate={paginate}
       />
+    </div>
+      <div className="footer-copyright text-center py-3">© 
+      <a  id="cc"> Harshit Sharma </a>
+      </div>
     </div>
   );
 }
