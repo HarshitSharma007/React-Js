@@ -1,6 +1,14 @@
 .App {
   text-align: center;
+  height:100%;
+  width:100%;
 }
+#root{
+  height:100%;
+  width:100%;
+  background: #1E1D4D !important;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +44,46 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  display:flex;
+  gap:30vw;
+}
+
+.search{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  width: 30vw;
+  max-width:300px;
+}
+
+
+.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon{
+  color:white!important;
+}
+
+.posts li{
+  color:#ECEBF3;
+  background: #FB7CAC;
+}
+.posts li h4{
+  color:#1E1D4D;
+}
+h1{
+  color:white;
+}
+.pagination li{
+  
+  color:#1E1D4D;
+}
+
+.pagination a{
+  background-color: #ECEBF3;
+}
+.pagination li :hover{
+  cursor: pointer;
+} 
